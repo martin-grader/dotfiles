@@ -105,6 +105,7 @@ call plug#begin()
     Plug 'junegunn/fzf'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'theoldmoon0602/coc-plug'
 
     Plug 'jiangmiao/auto-pairs'
 
@@ -132,6 +133,13 @@ call plug#begin()
 
     Plug 'hashivim/vim-terraform'
 call plug#end()
+
+call coc_plug#begin()
+    CocPlug 'coc-pyright'
+    CocPlug '@yaegassy/coc-ruff'
+    CocPlug 'coc-clangd'
+    CocPlug 'coc-sh'
+call coc_plug#end()
 
 set background=dark
 colorscheme gruvbox
