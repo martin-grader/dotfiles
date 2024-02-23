@@ -10,7 +10,14 @@
                 "tf"
             ],
             "initializationOptions": {}
+        },
+    "bash": {
+        "command": "bash-language-server",
+        "args": ["start"],
+        "filetypes": ["sh"],
+        "ignoredRootPaths": ["~"]
         }
+          
     },
     "python.venvPath": "${env:VIRTUAL_ENV}",
     "python.analysis.typeCheckingMode": "basic",
