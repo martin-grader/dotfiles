@@ -1,0 +1,36 @@
+{
+    "languageserver": {
+        "terraform": {
+            "command": "terraform-ls",
+            "args": [
+                "serve"
+            ],
+            "filetypes": [
+                "terraform",
+                "tf"
+            ],
+            "initializationOptions": {}
+        }
+    },
+    "python.venvPath": "${env:VIRTUAL_ENV}",
+    "python.analysis.typeCheckingMode": "basic",
+    "pyright.testing.provider": "pytest",
+    "python.pythonPath": "${env:VIRTUAL_ENV}/bin/python",
+    "python.formatting.provider": "none",
+    "python.linting.enabled": false,
+    "pyright.organizeimports.provider": "ruff",
+    "pyright.enable": true,
+    "pyright.inlayHints.parameterTypes": false,
+    "ruff.autoFixOnSave": true,
+    "coc.preferences.formatOnSave": true,
+    "suggest.noselect": true,
+    "ruff.disableHover": true,
+    "ruff.enable": true,
+    "clangd.compilationDatabaseCandidates": [
+        "${PROJECTROOT}/build"
+    ],
+    "clangd.arguments": [
+        "--clang-tidy"
+    ],
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd"
+}
