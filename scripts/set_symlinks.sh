@@ -5,7 +5,7 @@ dotfiles_dir=~/dotfiles
 log_file=$dotfiles_dir/link_log.txt
 
 # simple dotfiles
-files_to_link=("vimrc" "gnuplot" "zshrc" "tmux.conf")
+files_to_link=("vimrc" "gnuplot" "zshrc" "tmux.conf" "gitconfig")
 for file in ${files_to_link[@]}; do
     sudo rm -rf ~/.$file >> $log_file 2>&1
     ln -sf $dotfiles_dir/$file ~/.$file

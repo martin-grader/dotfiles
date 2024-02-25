@@ -1,0 +1,10 @@
+[user]
+	name = Martin Grader
+	email = martingrader@gmail.com
+[core]
+	editor = vim
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
