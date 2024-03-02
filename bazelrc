@@ -1,0 +1,2 @@
+build --color=yes
+test --test_output=all
