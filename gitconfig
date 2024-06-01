@@ -3,6 +3,8 @@
 	email = martingrader@gmail.com
 [core]
 	editor = vim
+[diff]
+    tool = vimdiff
 [alias]
     st = status
     ci = commit

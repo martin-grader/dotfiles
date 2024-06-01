@@ -11,6 +11,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 sudo snap install bash-language-server --classic >> $log_file 2>&1
 
+pip install pre-commit
 
 
 echo -e "\n====== Summary ======\n"
