@@ -157,7 +157,7 @@ set listchars=tab:>\                            " > to highlight <Tab>"
 "set mouse=                                      " disable mouse
 
 
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 " Indents
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
