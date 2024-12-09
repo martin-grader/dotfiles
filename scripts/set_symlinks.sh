@@ -14,7 +14,7 @@ done
 #coc settings 
 file_to_link="coc-settings.json"
 sudo rm -rf ~/.vim/$file_to_link >> $log_file 2>&1
-ln -sf $dotfiles_dir/$file ~/.vim/$file_to_link
+ln -sf $dotfiles_dir/$file_to_link ~/.vim/$file_to_link
 
 echo -e "\n====== Summary ======\n"
 cat $log_file
