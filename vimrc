@@ -95,14 +95,8 @@ call plug#begin()
 
     Plug 'scrooloose/nerdtree' 
     Plug 'Xuyuanp/nerdtree-git-plugin'
-"    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     Plug 'airblade/vim-gitgutter'
-
-"    Plug 'ryanoasis/vim-devicons'
-"    Plug 'ryanoasis/nerd-fonts'
-
-    Plug 'junegunn/fzf'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'theoldmoon0602/coc-plug'
@@ -111,9 +105,6 @@ call plug#begin()
 
     Plug 'vim-python/python-syntax'
     Plug 'morhetz/gruvbox' 
-
-"    Plug 'tell-k/vim-autopep8'
-"    Plug 'dense-analysis/ale'
 
     Plug 'nathanaelkane/vim-indent-guides'
 
@@ -129,9 +120,11 @@ call plug#begin()
 
     Plug 'tpope/vim-fugitive'
 
-    Plug 'iamcco/markdown-preview.nvim'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
     Plug 'hashivim/vim-terraform'
+    
+    Plug 'bling/vim-bufferline'
 call plug#end()
 
 call coc_plug#begin()
@@ -319,6 +312,7 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+let g:airline#extensions#bufferline#enabled = 0
 
 " Mappings for CoCList
 " Show all diagnostics
