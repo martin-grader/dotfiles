@@ -109,7 +109,7 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdc="cd /media/Daten/Code/"
+alias cdc="cd /media/shared/Code/"
 
 # Turn off all beeps
 unsetopt BEEP
